@@ -346,7 +346,7 @@ def master(out):
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-stats",
                     "-i", os.path.join(WORK, "picture.mp4"), "-i", os.path.join(WORK, f"{EPISODE}_MIX_v01.wav"),
                     "-vf", f"ass={ass},format=yuv420p", "-map", "0:v", "-map", "1:a",
-                    "-c:v", "libx264", "-preset", "slow", "-crf", "18", "-maxrate", "20M", "-bufsize", "30M",
+                    "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-maxrate", "20M", "-bufsize", "30M",
                     "-profile:v", "high", "-r", str(FPS), "-g", "60",
                     "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709",
                     "-c:a", "aac", "-b:a", "320k", "-ar", str(SR), "-ac", "2",
