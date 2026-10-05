@@ -1,3 +1,5 @@
 node_modules
 EP001_delivery/build/work/
 __pycache__/
+EP001_delivery/01_video/
+EP001_delivery/02_project/media/
